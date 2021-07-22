@@ -40,15 +40,7 @@ labels:
   value: "red-hat-camel-k bundle"
 - name: "License"
   value: "ASL 2.0"
-
-#modules:
- # repositories:
-  #  - name: modules
-   #   path: modules
-  #install:
-   # - name: camel-k-manifests
-    #- name: metadata-annotations
-
+  
 artifacts:
     - name: "manifests"
       path: artifacts/manifests
