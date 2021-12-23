@@ -1,8 +1,8 @@
 schema_version: 1
 
-name: "integration-tech-preview/camel-k-rhel8-operator-metadata"
+name: "integration/camel-k-rhel8-operator-bundle"
 description: "bundle containing manifests for red-hat-camel-k"
-version: "1.3.0"
+version: "1.6.0"
 from: "scratch"
 
 labels:
@@ -19,17 +19,17 @@ labels:
 - name: "operators.operatorframework.io.bundle.package.v1"
   value: red-hat-camel-k
 - name: "operators.operatorframework.io.bundle.channels.v1"
-  value: techpreview
+  value: "1.6.x"
 - name: "operators.operatorframework.io.bundle.channel.default.v1"
-  value: techpreview       
+  value: "1.6.x"      
 - name: "operators.operatorframework.io.test.mediatype.v1"
   value: "scorecard+v1"
 - name: "operators.operatorframework.io.test.config.v1"
   value: "tests/scorecard/"
 - name: "com.redhat.fuse.camel-k.operatorversion"
-  value: "1.3.0-30"
+  value: "1.6.0-16"
 - name: "com.redhat.fuse.camel-k.csvversion"
-  value: "1.3.3"         
+  value: "1.6.2"         
 - name: "com.redhat.component"
   value: "red-hat-camel-k-bundle-container"
 - name: "maintainer"
@@ -52,7 +52,7 @@ labels:
 artifacts:
     - name: "manifests"
       path: artifacts/manifests
-      dest: /manifests
+      dest: /
     - name: "annotations.yaml"
       path: artifacts/metadata/annotations.yaml
-      dest: /metadata
+      dest: /metadata/

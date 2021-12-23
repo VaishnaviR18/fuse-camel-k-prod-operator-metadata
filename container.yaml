@@ -1,0 +1,12 @@
+operator_manifests:
+  manifests_dir: manifests
+  enable_digest_pinning: true
+  enable_repo_replacements: true
+  enable_registry_replacements: true
+  repo_replacements:
+    - registry: registry.redhat.io
+      package_mappings:
+        fuse-camel-k-operator-container: integration/camel-k-rhel8-operator
+    - registry: registry-proxy.engineering.redhat.com
+      package_mappings:
+        fuse-camel-k-operator-container: integration/camel-k-rhel8-operator
