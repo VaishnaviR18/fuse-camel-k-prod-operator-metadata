@@ -56,3 +56,10 @@ artifacts:
     - name: "annotations.yaml"
       path: artifacts/metadata/annotations.yaml
       dest: /metadata/
+      
+#osbs:
+ # configuration:
+  #  container_file: container.yaml
+   #   repository:
+    #        name: containers/fuse-camel-k-prod-operator-metadata
+     #       branch: fuse-8.0-openshift-rhel-8 branch      
